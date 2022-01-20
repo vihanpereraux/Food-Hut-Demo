@@ -38,6 +38,12 @@
     -webkit-box-shadow: none !important;
 }
 
+input[type="text"]{
+    font-size:16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
 .login-btn{
     background-color: #323335;
     width: 97%;
