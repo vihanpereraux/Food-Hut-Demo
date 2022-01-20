@@ -27,10 +27,9 @@
     
     <!-- Login page -->
     <div data-role="page" id="login-screen">
-
-        <!-- Content -->
         <div role="main" class="ui-content">
 
+            <!-- Content -->
             <div id="login-form">
                 <!-- Login form -->
                 <h2 id="sign-in-text">Sign In</h2>
@@ -44,13 +43,58 @@
                         id="exampleInputUsername" placeholder="Passoword">
                 </form>
                 <a class="btn login-btn mx-auto d-block" href=""><p>Login</p></a>
-                <p id="register-button">Don't have an account ? <span style="color: #E3AB2C;">
-                    Register</span>
-                </p>
+
+                <a href="#register-screen">
+                    <p id="auth-text">Don't have an account ? <span style="color: #E3AB2C;">
+                        Register</span>
+                    </p>
+                </a>
             </div>
-            
+
         </div>
 
+    </div>
+
+
+    <!-- Register page -->
+    <div data-role="page" id="register-screen">
+        <div role="main" class="ui-content">
+
+            <!-- Content -->
+            <div id="register-form">
+
+                <h2 id="register-text">Register</h2>
+
+                <form>
+                    <input type="text" data-wrapper-class="custom-input mx-auto d-block" 
+                        id="exampleInputUsername" placeholder="Username">
+
+                    <div class="mt-3"></div>
+
+                    <input type="text" data-wrapper-class="custom-input mx-auto d-block" 
+                        id="exampleInputEmail" placeholder="Email">
+                        
+                    <div class="mt-3"></div>
+
+                    <input type="text" data-wrapper-class="custom-input mx-auto d-block" 
+                        id="exampleInputPassword" placeholder="Password">
+
+                    <div class="mt-3"></div>
+
+                    <input type="text" data-wrapper-class="custom-input mx-auto d-block" 
+                        id="exampleInputLocation" placeholder="Location">
+                </form>
+
+                <a class="btn register-btn mx-auto d-block" href="#login-screen"><p>Register</p></a>
+
+                <a href="#login-screen">
+                    <p id="auth-text">Already have an account ? <span style="color: #E3AB2C;">
+                        Login</span>
+                    </p>
+                </a>
+            </div>
+
+        </div>
     </div>
     
 </body>

@@ -5,6 +5,7 @@
     Bold 700
 */
 
+/* Login styles */
 #sign-in-text{
     font-family: Poppins;
     font-size: 22px;
@@ -19,18 +20,18 @@
 }
 
 .custom-input{
-    /* box-shadow: none; */
     border: none;
     height: 57px;
     border-radius: 12px;
     width: 97%;
     padding-top: 12px;
+    padding-left: 12px;
     box-shadow: 1px 1px 25px #e1e1e125;
 }
 
 ::-webkit-input-placeholder { 
     font-family: Poppins;
-    padding-left: 12px;
+    font-size: 16px;
 }
 
 .ui-focus {
@@ -55,7 +56,7 @@
     letter-spacing: 1.0px;
 }
 
-#register-button{
+#auth-text{
     font-family: Poppins;
     font-weight: 500;
     font-size: 15px;
@@ -64,6 +65,36 @@
     margin-top: 25px;
 }
 
-#login-form{
-    
+a{
+    text-decoration: none;
+}
+
+
+
+/* Register styles */
+#register-text{
+    font-family: Poppins;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15vh;
+    margin-bottom: 65px;
+}
+
+.register-btn{
+    background-color: #323335;
+    width: 97%;
+    border-radius: 12px;
+    height: 54px;
+    margin-top: 42px;
+}
+
+.register-btn p{
+    font-size: 15px;
+    padding-top: 9px;
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
+    letter-spacing: 1.0px;
 }
