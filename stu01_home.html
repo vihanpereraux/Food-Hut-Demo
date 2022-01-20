@@ -25,25 +25,68 @@
         <link rel="stylesheet" href="assets/css/stu01_fonts.css">
 </head>
 <body>
+
     <div data-role="page" id="home-screen">
         <div role="main" class="ui-content">
 
-            <div class="topnav" id="myTopnav">
-                <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                    <p>Home</p></a>
-                <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                    <p>Account</p></a>
-                <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                    <p>Favourites</p></a>
-                <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                    <p>FAQ</p></a>
-                <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                    <p>Members Benifits</p></a>
-                <a href="#login-screen">
-                    <p>Logout</p></a>
+            <div id="nav-section">
+                <div class="topnav" id="myTopnav">
+                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
+                        <p>Home</p></a>
+                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
+                        <p>Account</p></a>
+                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
+                        <p>Favourites</p></a>
+                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
+                        <p>FAQ</p></a>
+                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
+                        <p>Members Benifits</p></a>
+                    <a href="#login-screen">
+                        <p>Logout</p></a>
+    
+                    <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            </div>
 
-                <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
-              </div>
+            <div id="menu-body">
+
+                <!-- Carousel section -->
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/Home/Banner-Images.png" class="mx-auto d-block banner-img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Home/Banner-Images.png" class="mx-auto d-block banner-img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Home/Banner-Images.png" class="mx-auto d-block banner-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trending picks section -->
+                <div class="container trending-picks">
+                    <div class="row">
+                        <div class="col-6 trending-picks-txt">
+                            Trending picks
+                        </div>
+                        <div class="col-6 see-all-txt">
+                            See all
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="card-img" src="assets/img/Home/Burger-img.png" alt="">
+                        </div>
+                        <div class="col-8">
+                            <p style="font-size: 16px; font-weight: 600;">Home made sweet beef burger asdsdsdd</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             
         </div>
     </div>

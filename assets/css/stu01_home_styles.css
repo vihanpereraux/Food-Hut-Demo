@@ -70,3 +70,44 @@ navbar-toggler{
       font-weight: 500;
     }
 }
+
+#carousel{
+    position: absolute;
+    margin-left: -35px;
+    width: 110%;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.trending-picks{
+    padding-top: 250px;
+}
+
+#menu-body{
+    margin-top: 40px;
+}
+
+.trending-picks-txt{
+    font-weight: 600;
+    font-style: 21px;
+}
+.see-all-txt{
+    text-align: right;
+    font-style: 15px;
+    font-weight: 500;
+}
+
+.card{
+    width: 100%;
+}
+.card-img{
+    width: 100%;
+}
+.card-text{
+    margin:0px;
+}
+
+
+
