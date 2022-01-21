@@ -1,0 +1,26 @@
+[
+	{
+		"foodId": 1,
+		"foodTitle": "Home made sweet beef burger",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": "Rs. 350.00",
+		"imgUrl": "assets/img/Home/Trending Picks/Burger-img.png"
+	},
+	{
+		"foodId": 2,
+		"foodTitle": "Crispy chicken leg piece bucket",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": "Rs. 1100.00",
+		"imgUrl": "assets/img/Home/Trending Picks/Chciken-Bucket-Img.png"
+	},
+	{
+		"foodId": 113,
+		"foodTitle": "Home made orange juice pack",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": "Rs. 130.00",
+		"imgUrl": "assets/img/Home/Trending Picks/Orange-Juice-Img.png"	
+	}
+]
