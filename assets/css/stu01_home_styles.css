@@ -82,7 +82,7 @@ navbar-toggler{
 }
 
 .trending-picks{
-    padding-top: 250px;
+    padding-top: 260px;
 }
 
 #menu-body{
@@ -99,14 +99,44 @@ navbar-toggler{
     font-weight: 500;
 }
 
-.card{
-    width: 100%;
+.first-food-card{
+    margin-top: 20px;
 }
+
+.food-card{
+    background-color:white;
+    border-radius: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 1px 1px 25px #e1e1e125;
+}
+
 .card-img{
     width: 100%;
 }
-.card-text{
-    margin:0px;
+
+.food-details{
+    padding-top: 12px;
+}
+
+#food-title{
+    font-size: 14px; 
+    font-weight: 600;
+    line-height: 1.4;
+}
+#food-description{
+    margin-top: -11px;
+    font-size: 12px;
+    font-weight: 500;
+}
+#food-ratings{
+    margin-top: -11px;
+    font-size: 12px;
+}
+#food-price{
+    margin-top: -8px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
