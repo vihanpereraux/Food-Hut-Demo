@@ -12,7 +12,7 @@ function loginfunc ()
         alert('username is maching !');
         localStorage.setItem('username', username);
         localStorage.setItem('password', password);
-        window.location.href = "file:///G:/Projects/Final%20Year/Mobile%20UX/CW/CW%20Build/stu01_home.html";
+        window.location.href = "stu01_home.html";
     }
     else
     {

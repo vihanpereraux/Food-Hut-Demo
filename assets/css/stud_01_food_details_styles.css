@@ -62,4 +62,16 @@ navbar-toggler{
     }
 }
 
+.main-img
+{
+  width: 60%;
+}
+
+.details-section
+{
+  background-color: red;
+  height: 500px;
+  border-radius: 15px;
+}
+
 
