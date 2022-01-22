@@ -104,6 +104,7 @@ function buidCards(data)
     }
 }
 
+
 const itemNames = [];
 function sendEmails(recieverEmail)
 {

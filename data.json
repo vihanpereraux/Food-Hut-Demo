@@ -16,11 +16,27 @@
 		"imgUrl": "assets/img/Home/Trending Picks/Chciken-Bucket-Img.png"
 	},
 	{
-		"foodId": 113,
+		"foodId": 3,
 		"foodTitle": "Home made orange juice pack",
 		"foodDescription": "Cooked by Nishan's family",
 		"foodRatings": 4,
 		"foodPrice": "Rs. 130.00",
 		"imgUrl": "assets/img/Home/Trending Picks/Orange-Juice-Img.png"	
+	},
+    {
+		"foodId": 4,
+		"foodTitle": "Soft sausage bun",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": "Rs. 120.00",
+		"imgUrl": "assets/img/Home/Trending Picks/Sausage-Bun-Img.png"	
+	},
+    {
+		"foodId": 5,
+		"foodTitle": "Cheese chicken bacon burger",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": "Rs. 600.00",
+		"imgUrl": "assets/img/Home/Trending Picks/Cheese-Bacon-Burger-Img.png"	
 	}
 ]
