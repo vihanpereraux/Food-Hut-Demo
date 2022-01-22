@@ -1,3 +1,4 @@
+// Food array
 var foodArray = [
 	{
 		"foodId": 1,
@@ -25,18 +26,21 @@ var foodArray = [
 	}
 ]
 
+
+// URL Parameter fetching
 function getParameter( patameterName )
 {   
     let parameters = new URLSearchParams( window.location.search );
     return parameters.get( patameterName );
 }
-
 var passedId = getParameter("id");
+console.log(passedId);
 
 
-buidCard(foodArray);
+// Desplaying POI details
+buidCards(foodArray);
 
-function buidCard(data) 
+function buidCards(data) 
 {  
     var cards = document.getElementById("single-detail");
     for (let i = 0; i < data.length; i++) {
@@ -45,35 +49,66 @@ function buidCard(data)
             var card = 
             `<div class="row food-card">
 
-            <div class="col-4 my-auto">
-                <img class="mx-auto d-block card-img" src="${data[i].imgUrl}" alt="">
-            </div>
+                <div class="col-4 my-auto">
+                    <img class="mx-auto d-block card-img" src="${data[i].imgUrl}" alt="">
+                </div>
 
-            <div class="col-8 food-details">
-                <p id="food-title"><a href="stu01_food_details.html?id=${data[i].foodId}">${data[i].foodTitle}</a></p>
-                <p id="food-description">${data[i].foodDescription}</p>
-                <p id="food-ratings">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
-                        <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
-                    </svg>
+                <div class="col-8 food-details">
+                    <p id="food-title">${data[i].foodTitle}</p>
+                    <p id="food-description">${data[i].foodDescription}</p>
+                    <p id="food-ratings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
+                            <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                        </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
-                        <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
+                            <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                        </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
-                        <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
-                    </svg>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
-                        <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
-                    </svg>
-                </p>
-                <p id="food-price">${data[i].foodPrice}</p>
-            </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
+                            <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                        </svg>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.361" height="13.657" viewBox="0 0 14.361 13.657">
+                            <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                        </svg>
+                    </p>
+                    <p id="food-price">${data[i].foodPrice}</p>
+                </div>
 
             </div>`
             cards.innerHTML += card
         }
     }
 }
+
+
+// Getting the favourite id
+// Trying a noraml button
+function getFavourite() 
+{
+    alert('button is pressed');
+}
+
+
+// Getting favourite Id from checkbox
+const favFoods = [];
+
+function validate(foodId) {
+    if (document.getElementById('LetterNeed').checked) 
+    {
+        alert(foodId);
+        favFoods.push(foodId);
+        console.log(favFoods);
+    } 
+    else 
+    {
+        alert("You didn't check it! Let me check it for you.");
+    }
+    localStorage.setItem("favFoods", JSON.stringify(favFoods));
+}
+
+//document.getElementById('LetterNeed').addEventListener('change', validate);
+
+
+

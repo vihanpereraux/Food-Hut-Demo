@@ -99,8 +99,8 @@ navbar-toggler{
     font-weight: 500;
 }
 
-.first-food-card{
-    margin-top: 20px;
+#trending-picks{
+    margin-top: 25px;
 }
 
 .food-card{
@@ -137,6 +137,17 @@ navbar-toggler{
     margin-top: -8px;
     font-size: 14px;
     font-weight: 500;
+}
+
+input[type=checkbox]{
+    width: 1px;
+    height: 1px;
+    margin-top: 8px;
+    margin-left: -23px;
+}
+.heart {
+    font-size: 18px;
+    color:red;
 }
 
 
