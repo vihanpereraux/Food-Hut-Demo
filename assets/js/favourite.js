@@ -1,14 +1,3 @@
-// Navbar toggle button
-function myFunction2() 
-{
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
 var foodArray = [
 	{
 		"foodId": 1,

@@ -81,13 +81,18 @@
 }
 
 #food-title{
-    font-size: 14px; 
+    font-size: 15px;
     font-weight: 600;
+    text-shadow: none;
     line-height: 1.4;
+    text-decoration: none;
+    color: #323335; /* for browsers that don't support 'inherit' as a color value */
+    color: inherit;
 }
+
 #food-description{
     margin-top: -11px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
 }
 #food-ratings{
@@ -101,13 +106,13 @@
 }
 
 input[type=checkbox]{
-    width: 1px;
-    height: 1px;
-    margin-top: 8px;
-    margin-left: -23px;
+    width: 0.5px;
+    height: 0.5px;
+    margin-top: 12px;
+    margin-left: -12px;
 }
 .heart {
-    font-size: 18px;
+    font-size: 19px;
     color:red;
 }
 

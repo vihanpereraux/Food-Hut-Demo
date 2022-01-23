@@ -3,40 +3,60 @@
 		"foodId": 1,
 		"foodTitle": "Home made sweet beef burger",
 		"foodDescription": "Cooked by Nishan's family",
+		"lengthyDescription": "Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home.",
 		"foodRatings": 4,
-		"foodPrice": "Rs. 350.00",
-		"imgUrl": "assets/img/Home/Trending Picks/Burger-img.png"
+		"foodSmallPrice": 500,
+		"foodMediumPrice": 700,
+		"foodLargePrice": 1200,
+		"imgUrl": "assets/img/Home/Trending Picks/Burger-img.png",
+		"detailedUrl": "assets/img/Home/Trending Picks/Veg-Pizza-Img.png"
 	},
 	{
 		"foodId": 2,
-		"foodTitle": "Crispy chicken leg piece bucket",
+		"foodTitle": "Crispy chicken wonder bucket",
 		"foodDescription": "Cooked by Nishan's family",
+		"lengthyDescription": "Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home.",
 		"foodRatings": 4,
-		"foodPrice": "Rs. 1100.00",
-		"imgUrl": "assets/img/Home/Trending Picks/Chciken-Bucket-Img.png"
+		"foodSmallPrice": 500,
+		"foodMediumPrice": 700,
+		"foodLargePrice": 1200,
+		"imgUrl": "assets/img/Home/Trending Picks/Chciken-Bucket-Img.png",
+		"detailedUrl": "assets/img/Home/Trending Picks/Veg-Pizza-Img.png"
 	},
 	{
 		"foodId": 3,
 		"foodTitle": "Home made orange juice pack",
 		"foodDescription": "Cooked by Nishan's family",
+		"lengthyDescription": "Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home.",
 		"foodRatings": 4,
-		"foodPrice": "Rs. 130.00",
-		"imgUrl": "assets/img/Home/Trending Picks/Orange-Juice-Img.png"	
+		"foodSmallPrice": 500,
+		"foodMediumPrice": 700,
+		"foodLargePrice": 1200,
+		"imgUrl": "assets/img/Home/Trending Picks/Orange-Juice-Img.png",
+		"detailedUrl": "assets/img/Home/Trending Picks/Veg-Pizza-Img.png"	
 	},
     {
 		"foodId": 4,
 		"foodTitle": "Soft sausage bun",
 		"foodDescription": "Cooked by Nishan's family",
+		"lengthyDescription": "Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home.",
 		"foodRatings": 4,
-		"foodPrice": "Rs. 120.00",
-		"imgUrl": "assets/img/Home/Trending Picks/Sausage-Bun-Img.png"	
+		"foodSmallPrice": 500,
+		"foodMediumPrice": 700,
+		"foodLargePrice": 1200,
+		"imgUrl": "assets/img/Home/Trending Picks/Sausage-Bun-Img.png",
+		"detailedUrl": "assets/img/Home/Trending Picks/Veg-Pizza-Img.png"	
 	},
     {
 		"foodId": 5,
 		"foodTitle": "Cheese chicken bacon burger",
 		"foodDescription": "Cooked by Nishan's family",
+		"lengthyDescription": "Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home.",
 		"foodRatings": 4,
-		"foodPrice": "Rs. 600.00",
-		"imgUrl": "assets/img/Home/Trending Picks/Cheese-Bacon-Burger-Img.png"	
+		"foodSmallPrice": 500,
+		"foodMediumPrice": 700,
+		"foodLargePrice": 1200,
+		"imgUrl": "assets/img/Home/Trending Picks/Cheese-Bacon-Burger-Img.png",
+		"detailedUrl": "assets/img/Home/Trending Picks/Veg-Pizza-Img.png"	
 	}
 ]

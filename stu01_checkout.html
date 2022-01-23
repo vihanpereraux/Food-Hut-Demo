@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Hut - Home</title>
+    <title>Food Hut - Cart</title>
 
     <!-- Bootstrap V5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -27,9 +27,9 @@
 </head>
 <body>
 
-    <!-- Food details -->
-    <div data-role="page" id="food-details-screen">
-        
+    <div data-role="page" id="your-items-screen">
+
+        <!-- Nav section -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 
@@ -55,15 +55,73 @@
             </div>
         </nav>
 
-        <div id="single-detail"></div>
-    </div>    
-    
-    
+
+        <!-- Your items section -->
+        <div id="your-items">
+            <div class="container">
+                <!-- Your items heading -->
+                <h2 id="your-items-heading">Your Items</h2>
+
+                <!-- Your item list -->
+                <div id="your-itemsz"></div>
+
+                <!-- Summary section -->
+                <div class="row your-items-summary-section">
+
+                    <div class="col-6">
+                        <p id="your-items-sub-total-title">
+                            Sub total
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p id="your-items-sub-total-price"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <p id="your-items-delivery-fee-title">
+                            Delivery fee
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p id="your-items-delivery-price">
+                            Rs 60
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <p id="your-items-full-amount-title">
+                            Total
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p id="your-items-full-amount-price">
+                            Rs 1260
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Checkout button -->
+        <div class="container">
+            <a class="btn checkout-btn" href="">
+                <p>Checkout</p>
+            </a>
+        </div>
+        
+    </div>
+
+
     <!-- Bootstrap V5 - JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script src="assets/js/food_details.js"></script>
     <script src="assets/js/checkout.js"></script>
 </body>
 </html>
