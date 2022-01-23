@@ -110,32 +110,10 @@ function buidCards(data)
 }
 
 
-// Getting the favourite id
-// Trying a noraml button
-function getFavourite() 
-{
-    alert('button is pressed');
+// Quantity counter logic - in food-details page
+function increment() {
+    document.getElementById('itemNubmer').stepUp();
 }
-
-
-// Getting favourite Id from checkbox
-const favFoods = [];
-
-function validate(foodId) {
-    if (document.getElementById('LetterNeed').checked) 
-    {
-        alert(foodId);
-        favFoods.push(foodId);
-        console.log(favFoods);
-    } 
-    else 
-    {
-        alert("You didn't check it! Let me check it for you.");
-    }
-    localStorage.setItem("favFoods", JSON.stringify(favFoods));
+function decrement() {
+    document.getElementById('itemNubmer').stepDown();
 }
-
-//document.getElementById('LetterNeed').addEventListener('change', validate);
-
-
-

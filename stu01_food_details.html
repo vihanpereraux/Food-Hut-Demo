@@ -28,38 +28,156 @@
 
     <!-- Food details -->
     <div data-role="page" id="food-details-screen">
-        <div role="main" class="ui-content">
-
-            <div id="nav-section">
-                <div class="topnav" id="myTopnav">
-                    <a href="stu01_home.html">
-                        <p>Home</p></a>
-                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                        <p>Account</p></a>
-                    <a href="#favourites-list">
-                        <p>Favourites</p></a>
-                    <a href="#favourites-list">
-                        <p>FAQ</p></a>
-                    <a href="https://getbootstrap.com/docs/5.0/components/navbar/">
-                        <p>Members Benifits</p></a>
-                    <a href="#login-screen">
-                        <p>Logout</p></a>
-    
-                    <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#">
+                    <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                </a>
+              
+                <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="stu01_home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Favorites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Members Benifits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                    </ul>
                 </div>
+
             </div>
+        </nav>
 
-            <div id="single-detail"></div>
 
+        <div class="container">
             <div class="details-section">
+
                 <!-- Main img -->
                 <img class="main-img mx-auto d-block" 
                     src="assets/img/Home/Trending Picks/Veg-Pizza-Img.png" alt="">
 
-                
+                <!-- Item details -->
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Item name -->
+                        <div class="col-12">
+                            <h5 id="details-food-title">Vegetable pizza</h5>
+                        </div>
+                        
+                        <!-- Lengthy description -->
+                        <div class="col-12">
+                            <p id="details-food-description">
+                                Hot, cheesy pizza loaded with your favorite 
+                                veggies is one of the most fun and easy 
+                                dinners to make at home.
+                            </p>
+                        </div>
+
+                        <!-- Current reviews -->
+                        <p id="details-food-ratings">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 14.361 13.657">
+                                <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                            </svg>
+              
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 14.361 13.657">
+                                <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                            </svg>
+              
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 14.361 13.657">
+                                <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                            </svg>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 14.361 13.657">
+                                <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 22.634 21.525">
+                                <path id="Icon_feather-star" data-name="Icon feather-star" d="M14.317,3l3.5,7.084,7.82,1.143-5.658,5.511,1.335,7.786-6.994-3.678L7.323,24.525l1.335-7.786L3,11.227l7.82-1.143Z" transform="translate(-3 -3)" fill="#bebebe"/>
+                            </svg>
+                        </p>
+
+                        <!-- Custom devider -->
+                        <span id="details-devider"><hr></span>
+
+                        <!-- Pizza size -->
+                        <div class="col-12">
+                            <h5 id="details-food-size-title">Select size</h5>
+                        </div>
+
+                        <!-- Radio button 01 -->
+                        <div class="col-1 pricing-radio-btns">
+                            <input data-role="none" type="radio" id="small" name="fav_language" value="small">
+                        </div>
+                        <div class="col-5 pricing-label-names">
+                            <label data-role="none" for="small"><p>Small</p></label>
+                        </div>
+                        <div class="col-6 pricing-options">Rs. 750.00</div>
+
+                        <!-- Radio button 02 -->
+                        <div class="col-1 pricing-radio-btns">
+                            <input data-role="none" type="radio" id="medium" name="fav_language" value="medium">
+                        </div>
+                        <div class="col-5 pricing-label-names">
+                            <label data-role="none" for="medium"><p>Medium</p></label>
+                        </div>
+                        <div class="col-6 pricing-options">Rs. 1250.00</div>
+
+                        <!-- Radio button 03 -->
+                        <div class="col-1 pricing-radio-btns">
+                            <input data-role="none" type="radio" id="large" name="fav_language" value="large">
+                        </div>
+                        <div class="col-5 pricing-label-names">
+                            <label data-role="none" for=large"><p>Large</p></label>
+                        </div>
+                        <div class="col-6 pricing-options">Rs. 2750.00</div>
+
+                        <!-- Custom devider -->
+                        <span id="details-devider"><hr></span>
+                        
+                        <!-- Item counter -->
+                        <div class="col-6 my-auto">
+                            <h5 id="details-food-qty-title">Pizza items</h5>
+                        </div>
+                        <div class="col-6 details-item-counter">
+                            <button data-role="none" id="minus-btn" onclick="decrement()"><p>-</p></button>
+                            <input data-role="none" id=itemNubmer type=number value=1 min=1 max=50>
+                            <button data-role="none" id="plus-btn" onclick="increment()"><p>+</p></button>
+                        </div>
+
+                        <!-- Custom devider -->
+                        <span id="details-devider"><hr></span>
+                        
+                        <!-- Full amount -->
+                        <div class="col-6">
+                            <h5 id="details-full-amount-title">Full amount</h5>
+                        </div>
+                        <div class="col-6 my-auto">
+                            <p id="details-full-amount">
+                                Rs. 870.00
+                            </p>
+                        </div>
+
+                        <!-- Custom devider -->
+                        <span id="bottom-space"></span>
+
+                        <!-- Add to cart button -->
+                        <a data-role="none" class="btn add-to-cart-btn" href=""><p>Add to basket</p></a>
+                    
+                    </div>
+                </div>
+
             </div>
-            <!-- <button class="btn btn-primary" onclick="getFavourite()">favourite this !</button> -->
         </div> 
+        
+
+        <div id="single-detail"></div>
     </div>    
     
     
