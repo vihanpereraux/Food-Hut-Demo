@@ -177,16 +177,22 @@ function addToBasket(foodId, smallPortionPrice, mediumPortionPrice, largePortion
         portianPrice = largePortionPrice;
     }
     
+    // var favorites = [{foodId: 1, itemQty: "1", portionPrice: 500}];
+    var favorites = [] ;
     var cartItems = 
-        {
-            "foodId": foodId,
-            "itemQty": document.getElementById('itemNubmer').value,
-            "portianPrice": portianPrice
-        };
+    {
+        "foodId": foodId,
+        "itemQty": document.getElementById('itemNubmer').value,
+        "portionPrice": portianPrice
+    }
     
-    var favorites = [];
     favorites = JSON.parse(localStorage.getItem('cartItems'));
-    favorites.push(cartItems);
     console.log(favorites);
+
+    console.log(Array.isArray(cartItems));
+    favorites.push(cartItems);
+    
+    console.log(favorites);
+    //console.log(favorites);
     localStorage.setItem("cartItems", JSON.stringify(favorites));
 }

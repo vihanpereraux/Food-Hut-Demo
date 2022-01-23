@@ -19,6 +19,8 @@
     <!-- JQuery Mobile -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
     <!-- Style sheet -->
     <link rel="stylesheet" href="assets/css/stu01_fonts.css">
     <link rel="stylesheet" href="assets/css/stud_01_food_details_styles.css">
@@ -27,6 +29,7 @@
 </head>
 <body>
 
+    <!-- Item list screen -->
     <div data-role="page" id="your-items-screen">
 
         <!-- Nav section -->
@@ -54,7 +57,6 @@
 
             </div>
         </nav>
-
 
         <!-- Your items section -->
         <div id="your-items">
@@ -107,14 +109,68 @@
             </div>
         </div>
 
-
         <!-- Checkout button -->
         <div class="container">
-            <a class="btn checkout-btn" href="">
+            <a class="btn checkout-btn" href="#stripe-intergration">
                 <p>Checkout</p>
             </a>
         </div>
         
+    </div>
+
+
+    <!-- Stripe section -->
+    <div data-role="page" id="stripe-intergration">
+
+        <!-- Nav section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#">
+                    <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                </a>
+              
+                <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="stu01_home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Favorites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Members Benifits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <h3 id="purchase-heading">Let's Pay</h3>
+
+            <form id="frmBooking" name="bookingForm" action="_self">
+                <input data-role="none" type="text" class="form-control custom-input" id="card-number" 
+                    name="total_value" placeholder="Card number">
+                
+                <input data-role="none" type="text" class="form-control custom-input" id="cvv" 
+                    name="total_value" placeholder="CVV">
+
+                <input data-role="none" type="text" class="form-control custom-input" id="exp-date" 
+                    name="total_value" placeholder="Expire date">
+                
+                <input data-role="none" type="text" class="form-control custom-input" id="total_value" 
+                    name="total_value" placeholder="Amount" disabled>
+
+                <button data-role="none" id="customButton">
+                    <p>Order food</p></button>
+            </form>
+    
+            <div align="center" id="thankyouPayment"></div>
+        </div>
+
     </div>
 
 
