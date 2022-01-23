@@ -52,7 +52,7 @@ function buidCards(data)
     var alreadyFavs = JSON.parse(retrievedData);
 
     for (let i = 0; i < data.length; i++) {
-        for (let j = 0; j < alreadyFavs.length; j++)
+        for (let j = i; j < alreadyFavs.length; j++)
         {
             if ( data[i].foodId == alreadyFavs[j] ) 
             {

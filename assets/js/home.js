@@ -42,12 +42,11 @@ function buidCard()
                     <path id="Icon_feather-star" data-name="Icon feather-star" d="M10.181,3,12.4,7.5l4.962.725-3.59,3.5.847,4.94-4.438-2.334L5.743,16.657l.847-4.94L3,8.22,7.962,7.5Z" transform="translate(-3 -3)" fill="#feba27"/>
                 </svg>
             </p>
-            <p id="food-price">${data[i].foodSmallPrice}</p>
+            <p id="food-price">Rs ${data[i].foodSmallPrice}.00</p>
           </div>
   
           <div class="col-1">
-            <input class="heart fa fa-heart-o" type="checkbox" name="LetterNeed" id="LetterNeed" 
-            onchange="validate(${data[i].foodId})"></span>
+            <input class="heart fa fa-heart-o" type="checkbox" name="LetterNeed" id="LetterNeed" onchange="validate(${data[i].foodId})"></span>
           </div>
   
       </div>`
@@ -65,42 +64,26 @@ var emojiSvg =
   </defs>
   <rect id="HandEmoji" width="26" height="26" fill="url(#pattern)"/>
 </svg>`
-
 var updatedWelcomeText = 'Hi' + ' ' + localStorage.getItem('username') + ' ' + emojiSvg;
 document.getElementById("welcome-text").innerHTML = updatedWelcomeText;
 
 
 // Getting favourite Id from checkbox
-const favFoods = [];
+var favFoods = [];
 
 function validate(foodId) {  
 
-    if (document.getElementById('LetterNeed').checked) 
-    {
-        if (favFoods.includes(foodId))
-        {
-          //alert('Already added');
-        }
-        else
-        {
-          alert("Added to favourites" + foodId);
-          favFoods.push(foodId);
-          console.log(favFoods);
-          localStorage.setItem("favFoods", JSON.stringify(favFoods));
-        } 
-    } 
-    else 
-    {
-        alert("Removed from favourites");
-        for (let i = 0; i < favFoods.length; i++) 
-        {
-          if(foodId == favFoods[i])
-          {
-            // var getLSCityName = localStorage.getItem('favFoods');
-            // getLSCityName.splice(foodId,i);
-          }
-        }
-    }
+  if (favFoods.includes(foodId))
+  {
+    alert('Already added');
+  }
+  else
+  {
+    favFoods = JSON.parse(localStorage.getItem('favFoods'));
+    console.log(favFoods);
+    favFoods.push(foodId);
+    localStorage.setItem("favFoods", JSON.stringify(favFoods));
+  }
 }
 
 $(".heart.fa").click(function() {
