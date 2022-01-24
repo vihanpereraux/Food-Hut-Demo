@@ -10,3 +10,48 @@
 .share-icon{
     text-align: right;
 }
+
+.email-fav-btn{
+    background-color: #323335;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.email-fav-btn p {
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    padding-top: 12px;
+    font-size: 17px;
+}
+
+.email-input-modal-label p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.custom-input{
+    border: none;
+    height: 57px;
+    border-radius: 12px;
+    width: 97%;
+    padding-top: 12px;
+    padding-left: 12px;
+    box-shadow: 1px 1px 25px #e1e1e125;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+}
+
+input[type="text"]{
+    font-size:16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+#email-input-modal{
+    border: none;
+    margin-top: 30vh;
+}

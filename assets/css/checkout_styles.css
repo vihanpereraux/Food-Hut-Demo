@@ -9,6 +9,16 @@
     margin-top: 30px;
 }
 
+#your-items-location-01{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#your-items-location-02{
+    font-size: 17px;
+    font-weight: 600;
+}
+
 #your-items-heading{
     font-size: 20px;
     font-weight: 600;
@@ -44,7 +54,7 @@
 }
 
 .your-items-summary-section{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #your-items-sub-total-title{
@@ -85,7 +95,8 @@
     height: 60px;
     width: 100%;
     border-radius: 12px;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .checkout-btn p{
     text-decoration: none;
@@ -102,6 +113,7 @@
     text-align: center;
     font-size: 22px;
     font-weight: 600;   
+    margin-top: 30vh;
 }
 
 .custom-input{
@@ -158,4 +170,8 @@ input[type="text"]{
     font-size: 16px;
     font-family: Poppins;
     padding-top: 12px;
+}
+
+#payment-done-modal{
+    margin-top: 40vh;
 }

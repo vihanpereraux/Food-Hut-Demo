@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Hut - Home</title>
+    <title>Food Hut - Details</title>
 
     <!-- Bootstrap V5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -29,7 +29,7 @@
 
     <!-- Food details -->
     <div data-role="page" id="food-details-screen">
-        
+        <!-- Nav bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 
@@ -44,11 +44,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="stu01_home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Favorites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Members Benifits</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Account</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#favourites-list">Favorites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Members Benifits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#login-screen" onclick="storageClear()">Logout</a></li>
                     </ul>
                 </div>
 
@@ -65,5 +65,6 @@
 
     <script src="assets/js/food_details.js"></script>
     <script src="assets/js/checkout.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
