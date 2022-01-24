@@ -1,5 +1,6 @@
 // Displaying home cards
 buidCards();
+var dataValue = 0;
 
 function buidCards() 
 {  
@@ -55,6 +56,7 @@ function buidCards()
                 }
             }
         }
+        dataValue = data.length;
     });
 }
 
@@ -62,10 +64,10 @@ function buidCards()
 const itemNames = [];
 function sendEmails(recieverEmail)
 {
-    sendEmail(foodArray, recieverEmail);
+    sendEmail(recieverEmail);
     $("#email-input-modal").modal('hide');
 }
-function sendEmail(data, recieverEmail) 
+function sendEmail(recieverEmail) 
 {   
     var retrievedData = localStorage.getItem("favFoods");
     var alreadyFavs = JSON.parse(retrievedData);
@@ -73,32 +75,40 @@ function sendEmail(data, recieverEmail)
 
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(recieverEmail))
     {
-        for (let i = 0; i < data.length; i++) 
+        fetch('./data.json')
+        .then( function (response)
         {
-            for (let j = 0; j < alreadyFavs.length; j++) 
+        return response.json();
+        })
+        .then( function (data) 
+        {
+            for (let i = 0; i < data.length; i++) 
             {
-                if (data[i].foodId == alreadyFavs[j]) 
+                for (let j = 0; j < alreadyFavs.length; j++) 
                 {
-                    itemNames.push(data[i].foodTitle + ' ');
+                    if (data[i].foodId == alreadyFavs[j]) 
+                    {
+                        itemNames.push(data[i].foodTitle + ' ');
+                    }   
                 }   
-            }   
-        }
-        //alert(itemNames);
-        //alert(recieverEmail);
+            }
+            //alert(itemNames);
+            //alert(recieverEmail);
 
-        Email.send
-        ({
-            Host : "smtp.gmail.com",
-            Username : "slcollagearts.vp",
-            Password : "Pereravihan9",
-            To : recieverEmail,
-            From : "slcollagearts.vp@gmai.com",
-            Subject : "This is the subject",
-            Body : itemNames
-        }).
-        then(
-        message => alert(message)
-        );
+            Email.send
+            ({
+                Host : "smtp.gmail.com",
+                Username : "slcollagearts.vp",
+                Password : "Pereravihan9",
+                To : recieverEmail,
+                From : "slcollagearts.vp@gmai.com",
+                Subject : "This is the subject",
+                Body : itemNames
+            }).
+            then(
+            message => alert(message)
+            );
+        });
     }
     else
     {
