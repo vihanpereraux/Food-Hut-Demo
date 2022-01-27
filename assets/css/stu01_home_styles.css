@@ -106,15 +106,32 @@
 }
 
 input[type=checkbox]{
-    width: 0.5px;
-    height: 0.5px;
-    margin-top: 12px;
+    width: 1px;
+    height: 1px;
+    margin-top: 14px;
     margin-left: -12px;
 }
-.heart {
+
+#new-heart-icon{
+    margin-top: 0px;
+    margin-left: -12px;
     font-size: 19px;
-    color:red;
 }
 
+label {
+    color: grey;
+}
+
+input:checked + label
+{
+	color: red;
+    animation: grow .5s;
+    animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+}
+
+
+  
+
+  
 
 

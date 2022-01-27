@@ -137,7 +137,7 @@ function buidCards()
                                 <span id="bottom-space"></span>
     
                                 <!-- Add to cart button -->
-                                <a data-role="none" class="btn add-to-cart-btn" href="#your-items-screen" onclick="addToBasket(${data[i].foodId}, ${data[i].foodSmallPrice}, ${data[i].foodMediumPrice}, ${data[i].foodLargePrice})"><p>Add to basket</p></a>
+                                <a data-role="none" class="btn add-to-cart-btn" href="stu01_checkout.html" onclick="addToBasket(${data[i].foodId}, ${data[i].foodSmallPrice}, ${data[i].foodMediumPrice}, ${data[i].foodLargePrice})"><p>Add to basket</p></a>
                             
                             </div>
                         </div>

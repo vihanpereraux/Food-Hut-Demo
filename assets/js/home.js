@@ -2,6 +2,7 @@
 if (localStorage.getItem('isAuthorized') == 'authorized') 
 {   
     buidCard();
+    
     function buidCard() 
     {  
       var cards = document.getElementById("trending-picks");
@@ -48,7 +49,8 @@ if (localStorage.getItem('isAuthorized') == 'authorized')
               </div>
       
               <div class="col-1">
-                <input class="heart fa fa-heart-o" type="checkbox" name="LetterNeed" id="LetterNeed" onchange="validate(${data[i].foodId})"></span>
+                <input type="checkbox" name="LetterNeed" id="LetterNeed" 
+                    onchange="validate(${data[i].foodId})"><label id="new-heart-icon">❤</label>
               </div>
       
           </div>`
@@ -85,7 +87,18 @@ function validate(foodId) {
 
   if (favFoods.includes(foodId))
   {
-    alert('Already added');
+    //alert('Already added');
+    favFoods = JSON.parse(localStorage.getItem('favFoods'));
+    
+    for( var i = 0; i < favFoods.length; i++)
+    { 
+        if ( favFoods[i] == foodId) 
+        { 
+          favFoods.splice(i, 1); 
+        }
+        localStorage.setItem("favFoods", JSON.stringify(favFoods));
+        $('#unfavourite-modal').modal('show');
+    }
   }
   else
   {
@@ -95,6 +108,8 @@ function validate(foodId) {
     localStorage.setItem("favFoods", JSON.stringify(favFoods));
   }
 }
+
+
 
 $(".heart.fa").click(function() {
   $(this).toggleClass("fa-heart fa-heart-o");

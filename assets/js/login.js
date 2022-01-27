@@ -1,14 +1,13 @@
 function loginfunc ()
 {
-
     //const valid_username = 'vihanperera';
     const valid_password = 1234;
 
     var username = document.getElementById('InputUsername').value;
     var password = document.getElementById('InputPassword').value;
 
-    if (username == "vihanperera" || username == "rohanlekamge" || username == "sandaru" 
-        || username == "sasanka" && password == valid_password) 
+    if ((username == "vihanperera" || username == "rohanlekamge" || username == "sandaru" 
+        || username == "sasanka") && password == valid_password) 
     { 
         //alert('username is maching !');
         localStorage.setItem('username', username);

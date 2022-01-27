@@ -50,7 +50,6 @@ function buidCards()
                             </p>
                             <p id="food-price">Rs ${data[i].foodSmallPrice}.00</p>
                         </div>
-
                     </div>`
                     cards.innerHTML += card
                 }
